@@ -8,7 +8,7 @@ public class Farenheit extends Grado{
         return F;
     }
 
-    public Farenheit parse(Farenheit c){
+    public Farenheit parse(Celsius c){
         Farenheit F = new Farenheit();
         F.setValor(c.getValor()* 9/5 + 32);
         F.setUnidad(c.getUnidad()+"F");

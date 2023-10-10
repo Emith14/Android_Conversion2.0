@@ -58,18 +58,48 @@ public class MainActivity2 extends AppCompatActivity {
                 String unidadDestino = spinner2.getSelectedItem().toString();
 
 
-                double resultado = 0;
 
                 if (unidadOrigen.equals("Celsius") && unidadDestino.equals("Farenheit")) {
 
-                    f.setValor(valor);
-                    c.parse(f);
-                    resultado =  c.getValor();
+                    c.setValor(valor);
+                    Double resultado = f.parse(c).getValor();
                     result.setText("Resultado = " + resultado);
-
-
                 }
-              
+
+                if (unidadOrigen.equals("Celsius") && unidadDestino.equals("Kelvin")) {
+
+                    c.setValor(valor);
+                    Double resultado = k.parse(c).getValor();
+                    result.setText("Resultado = " + resultado);
+                }
+
+                if (unidadOrigen.equals("Farenheit") && unidadDestino.equals("Celsius")) {
+
+                    f.setValor(valor);
+                    Double resultado = c.parse(f).getValor();
+                    result.setText("Resultado = " + resultado);
+                }
+
+                if (unidadOrigen.equals("Farenheit") && unidadDestino.equals("Kelvin")) {
+
+                    f.setValor(valor);
+                    Double resultado = k.parse(f).getValor();
+                    result.setText("Resultado = " + resultado);
+                }
+
+                if (unidadOrigen.equals("Kelvin") && unidadDestino.equals("Celsius")) {
+
+                    k.setValor(valor);
+                    Double resultado = c.parse(k).getValor();
+                    result.setText("Resultado = " + resultado);
+                }
+
+                if (unidadOrigen.equals("Kelvin") && unidadDestino.equals("Farenheit")) {
+
+                    k.setValor(valor);
+                    Double resultado = f.parse(k).getValor();
+                    result.setText("Resultado = " + resultado);
+                }
             }
         });
     }
