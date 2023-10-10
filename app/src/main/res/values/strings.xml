@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Conversion2.0</string>
+
+    <string name="combobox">dropDownMenuExample</string>
+    <string-array name="Grados1">
+        <item>Celsius</item>
+        <item>Farenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+    <string-array name="Grados2">
+        <item>Celsius</item>
+        <item>Farenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+</resources>
